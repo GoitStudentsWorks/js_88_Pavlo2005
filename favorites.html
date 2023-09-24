@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Favorites</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+
+  <script type="module" crossorigin src="/js_88_Pavlo2005/assets/favorites-b7d8f3f5.js"></script>
+  <link rel="modulepreload" crossorigin href="/js_88_Pavlo2005/assets/08-dish-page-b398d1ae.js">
+  <link rel="stylesheet" href="/js_88_Pavlo2005/assets/08-dish-page-592d9c8e.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class=" container">
+    <div class="header-container">
+        <div class="nav-container">
+            <nav class="hidden-nav-container">
+                <ul class="nav-list">
+                    <li class="nav-link">
+                        <a class="home-link section-title js-home-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="fav-link section-title js-fav-link" href="./favorites.html">Favorites</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <a class="logo" href="./index.html"><span class="logo-span section-title">tasty</span>treats.</a>
+        <div class="header-img">
+            <a href="tel:+380730000000">
+                <svg class="header-tray" width="24" height="24">
+                    <use href="/js_88_Pavlo2005/assets/icon-3c492b1f.svg#icon-purchase"></use>
+                </svg>
+            </a>
+            <div class="js-burger-menu" id=data-burger-menu-opener>
+                <svg class="header-menu" width="32" height="32">
+                    <use href="/js_88_Pavlo2005/assets/icon-3c492b1f.svg#icon-menu"></use>
+                </svg>
+            </div>
+            <div class="switcher-img">
+                <div class=" switcher-bc">
+                    <input type="checkbox" class="switch-input">
+                    <span class="switch-slider"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="backdrop is-hidden" id=data-burger-menu>
+        <div class=".js-burger-menu burger-menu">
+            <svg class="js-close-menu close-burger-menu" width="32" height="32" id="data-mobile-menu-closed">
+                <use href="/js_88_Pavlo2005/assets/icon-3c492b1f.svg#icon-cross"></use>
+            </svg>
+            <ul class="burger-list">
+                <a class="burger-home-link section-title" href="./index.html">Home</a>
+                <a class="burher-fav-link section-title" href="./favorites.html">Favorites</a>
+            </ul>
+            <div class="switcher">
+                <div class="switcher-bc">
+                    <input type="checkbox" class="switch-input">
+                    <span class="switch-slider"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+  <div class="container favorites">
+    <!-- Hero -->
+    <div class="fav-hero-container">
+    </div>
+    <!-- Categories -->
+    <ul class="fav-categories">
+
+    </ul>
+    <!-- Recipes -->
+    <div class="fav-recipes js-dish-page-button"></div>
+    <!-- No favorites -->
+    <div class="fav-none">
+      <svg class="fav-none-icon" width="68" height="58">
+      </svg>
+      <p>It appears that you haven't added any recipes to your favorites yet. To get started, you can add recipes that
+        you like to your favorites for easier access in the future.</p>
+    </div>
+  </div>
+
+  
+  <!-- <script type=" module" src="/main.js"></script> -->
+</body>
+
+</html>

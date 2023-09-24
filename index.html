@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/js_88_Pavlo2005/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <script type="module" crossorigin src="/js_88_Pavlo2005/assets/index-de556900.js"></script>
+    <link rel="modulepreload" crossorigin href="/js_88_Pavlo2005/assets/08-dish-page-b398d1ae.js">
+    <link rel="stylesheet" href="/js_88_Pavlo2005/assets/08-dish-page-592d9c8e.css">
+    <link rel="stylesheet" href="/js_88_Pavlo2005/assets/index-b37df716.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <header class=" container">
+    <div class="header-container">
+        <div class="nav-container">
+            <nav class="hidden-nav-container">
+                <ul class="nav-list">
+                    <li class="nav-link">
+                        <a class="home-link section-title js-home-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="fav-link section-title js-fav-link" href="./favorites.html">Favorites</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <a class="logo" href="./index.html"><span class="logo-span section-title">tasty</span>treats.</a>
+        <div class="header-img">
+            <a href="tel:+380730000000">
+                <svg class="header-tray" width="24" height="24">
+                    <use href="/js_88_Pavlo2005/assets/icon-3c492b1f.svg#icon-purchase"></use>
+                </svg>
+            </a>
+            <div class="js-burger-menu" id=data-burger-menu-opener>
+                <svg class="header-menu" width="32" height="32">
+                    <use href="/js_88_Pavlo2005/assets/icon-3c492b1f.svg#icon-menu"></use>
+                </svg>
+            </div>
+            <div class="switcher-img">
+                <div class=" switcher-bc">
+                    <input type="checkbox" class="switch-input">
+                    <span class="switch-slider"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="backdrop is-hidden" id=data-burger-menu>
+        <div class=".js-burger-menu burger-menu">
+            <svg class="js-close-menu close-burger-menu" width="32" height="32" id="data-mobile-menu-closed">
+                <use href="/js_88_Pavlo2005/assets/icon-3c492b1f.svg#icon-cross"></use>
+            </svg>
+            <ul class="burger-list">
+                <a class="burger-home-link section-title" href="./index.html">Home</a>
+                <a class="burher-fav-link section-title" href="./favorites.html">Favorites</a>
+            </ul>
+            <div class="switcher">
+                <div class="switcher-bc">
+                    <input type="checkbox" class="switch-input">
+                    <span class="switch-slider"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+    
+    <main>
+
+      <!-- Introduction -->
+
+      <section class="hero">
+  <div class="container hero-parts">
+    <!-- 1st part -->
+
+    <div class="hero-text">
+      <h1 class="hero-title">
+        Learn to Cook <span class="title-part">Tasty Treats'</span> Customizable
+        Masterclass
+      </h1>
+      <p class="title-description">
+        TastyTreats - Customize Your Meal with Ingredient Options and
+        Step-by-Step Video Guides.
+      </p>
+      <a href="tel:+380730000000">
+        <button class="hero-button" id="openModalButton" type="">Order now</button>
+      </a>
+    </div>
+
+    <!-- 2nd part -->
+    <div class="hero-masterclass">
+          
+      <img class="img-chief" srcset="/js_88_Pavlo2005/assets/chief-0e92cfe9.png 1x, /js_88_Pavlo2005/assets/chief-2x-583a72ff.png 2x" src="/js_88_Pavlo2005/assets/chief-0e92cfe9.png" alt="chief" />
+         
+      <img class="img-preview" srcset="/js_88_Pavlo2005/assets/dish-1-1ee559f5.png 1x, /js_88_Pavlo2005/assets/dish-1-2x-5977bca7.png 2x" src="/js_88_Pavlo2005/assets/dish-1-1ee559f5.png" alt="preview" />
+          
+      <img class="img-dish" srcset="/js_88_Pavlo2005/assets/dish-2-0b9b1372.png 1x, /js_88_Pavlo2005/assets/dish-2-2x-b234bec0.png 2x" src="/js_88_Pavlo2005/assets/dish-2-0b9b1372.png" alt="dish" />
+            
+    </div>
+  </div>
+</section>
+
+      <div class="container main-container-recips">
+        <div>
+          <!-- Categories -->
+
+          <section class="category-section category-hidden" id="js-category-section">
+  <button class="btn-allCategories" id="allCategories">All categories</button>
+  <div class="sidebar">
+    <div class="category-list" id="categoryList"></div>
+  </div>
+  <div class="recipe-container"></div>
+  <div class="modal" id="recipeModal"></div>
+</section>
+
+<script src="../js/03-categories/03-categories.js"></script>
+
+
+          <!-- Popular-recips -->
+
+          <div class="precipes-title precipes-hidden" id="js-precipes">
+    <h2 class="precipes-title-text">Popular recipes</h2>
+    <div class="precipes-list js-popular-recipes js-dish-page-favorite">
+    </div>
+</div>
+
+        </div>
+        <div>
+          
+          <!-- Filter -->
+
+          <section class="filter">
+    <div class="container-filter container-filter-loader">
+        <div class="filter-container-loader">
+            <p class="loader filter-loader" ></p>
+        </div>
+        <form id="searchForm" hidden>
+            <div class="filters-containers">
+                <div class="filter-container-search">
+                    <label class="filter-label text" for="search">Search</label>
+                    <input class="filter-input filter-search" placeholder="Enter Text" type="text" id="search" name="search">
+                    <svg class="filter-icon-search">
+                        <use href="/js_88_Pavlo2005/assets/icon-3c492b1f.svg#icon-search"></use>
+                    </svg>
+                </div>
+                <div >
+                    <label class="filter-label text" for="time">Time</label>
+                    <select class="filter-input filter-time" id="time" name="time">
+                        <option data-placeholder="true"></option>
+                        <option value="10">10 min</option>
+                        <option value="20">20 min</option>
+                        <option value="30">30 min</option>
+                        <option value="40">40 min</option>
+                        <option value="50">50 min</option>
+                        <option value="60">60 min</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="filter-label text" for="area">Area</label>
+                    <select class="filter-input filter-area" id="area" name="area">
+                        <option data-placeholder="true"></option>
+                    </select>
+                </div>
+                <div>
+                    <label class="filter-label text" for="ingredients">Ingredients</label>
+                    <select class="filter-input filter-ingredients" id="ingredients" name="ingredients">
+                        <option data-placeholder="true"></option>
+                    </select>
+                </div>
+                <div class="clear-button" id="clearButton">
+                    <svg class="clear-button-icon">
+                        <use href="/js_88_Pavlo2005/assets/icon-3c492b1f.svg#icon-cross"></use>
+                    </svg>
+                    <p class="clear-button-text text">Reset the filter</p>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</section>
+
+          <!-- Dishes -->
+
+          <section class="dich-block">
+    <div class="container-filter js-dish-page-button">
+        <ul class="dich-container js-dich-container"></ul>
+        <div class="js-dich-block-gward"></div>
+    </div>
+</section>
+
+        </div>
+      </div>
+
+    </main>
+
+    <!-- Mobil-menu -->
+
+    
+
+    <!-- Loader -->
+
+    <!-- <p class="loader"></p>
+ -->
+
+    <!-- recipe-card -->
+
+    
+
+    <!-- scroll-up-button -->
+
+    <div class="btn-up btn-up_hide"></div>
+
+    <!-- Modal Order now -->
+
+    <!-- Modal Order now-->
+
+<div class="modal-order" data-modal="2" id="ModalOrderNow">
+
+    <div class="modal-order-text">
+        <button class="modal-order-close-btn" type="button">
+        <svg class="modal-order-close-icon" width="14" height="14">
+            <use href="/js_88_Pavlo2005/assets/icon-3c492b1f.svg#icon-cross"></use>
+        </svg>
+    </button>
+
+        <h2 class="modal-order-title">ORDER NOW</h2>
+        <form class="modal-order-form">
+            <label class="modal-order-label" for="name">Name</label>
+            <input class="modal-order-input" type="name" id="name" pattern=".*" title = "Please enter your name" />
+            <label class="modal-order-label" for="phone">Phone number</label>
+            <input class="modal-order-input" type="tel" id="phone" pattern="[0-9 +]{13}" title = "+3800000000" />
+            <label class="modal-order-label" for="email">Email</label>
+            <input class="modal-order-input" type="email" id="email" name="email" pattern=".*" title = "Please enter your Email" />
+            <label class="modal-order-label" for="comment">Comment</label>
+            <textarea class="modal-order-input" name="modal_comment" id="modal_comment" rows="5"></textarea>
+
+            <button class="modal-order-btn" type="submit">Send</button>
+        
+        </form>
+    </div>
+</div>
+
+        
+  </body>
+</html>
